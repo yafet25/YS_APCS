@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Phone 
 {
     private String brand;
@@ -6,20 +7,41 @@ public class Phone
     private String wifi;   
     private String memory;
    
+    
     public Phone(String strB, String strM, String strW, String strMe)
     {
         brand = strB;
         model = strM;
-        wifi  = strW;
+        wifi  = strW; 
         memory = strMe;
     }
 
-    public String setBrand(String brand)
+   
+    public String getBrand(String brand)
     {
-        this.brand = brand;
-        System.out.println("The brand is " + brand + " ");
         return brand;
     }
+    
+    public String getModel(String model)
+    {
+        return model;
+    }
+    
+    public String getWifi(String wifi)
+    {
+        return wifi;
+    }
+    
+    public String getMemory(String memory)
+    {
+        return memory;
+    }
+    public String toString()
+    {
+        return "BRAND:" + this.brand + " MODEL:" + this.model + " WIFI:" + this.wifi + " MEMORY:" + this.memory; 
+    }
+   
+    
     public void phoneInfo()
     {
         System.out.println(" brand: " + brand);
@@ -30,6 +52,9 @@ public class Phone
 
     
 
-    
+    public static void main(String[]args)
+    {
+         
+    }    
 
 }
